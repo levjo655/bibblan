@@ -1,4 +1,4 @@
-package models;
+package bibblan_backend.demo.models;
 
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.Id;
@@ -6,8 +6,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.Date;
 
-@Document(collection = "bibblan")
-public class Bibblan {
+@Document(collection = "blogposts")
+public class BlogPost {
     @Id
     private String id;
 
@@ -20,7 +20,7 @@ public class Bibblan {
     @CreatedDate
     private Date created_at;
 
-    public Bibblan() {
+    public BlogPost() {
     }
 
     public String getId() {
